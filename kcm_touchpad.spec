@@ -12,6 +12,8 @@ BuildRoot:      %_tmppath/%name-%version-buildroot
 BuildRequires:  kdelibs4-devel
 BuildRequires:  x11-driver-input-synaptics-devel
 
+Requires:       kdebase4-runtime
+
 %description
 Touchpad Configuration GUI for KDE
 
