@@ -7,7 +7,7 @@ License:        GPL
 Group:          Graphical desktop/KDE
 URL:            http://github.com/mishaaq/kcm_touchpad
 Source0:        mishaaq-%name-%gitref.tar.gz
-Patch0:         synaptic-1.1.3.patch
+#Patch0:         synaptic-1.1.3.patch
 
 # (bor) fix setting of boolean properties on startup
 # Patch100:	fix_boolean_properties_on_startup.patch
