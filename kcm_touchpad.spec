@@ -23,7 +23,7 @@ Requires:       kdebase4-runtime
 %description
 Touchpad Configuration GUI for KDE
 
-%files
+%files -f %name.lang
 %defattr(-,root,root)
 %doc AUTHORS README
 %{_kde_libdir}/kde4/kcm_touchpad.so
@@ -47,6 +47,8 @@ rm -rf %buildroot
 %makeinstall_std -C build
 
 rm -f %{buildroot}%{_docdir}/%{name}/*
+
+%find_lang %name
 
 %clean
 rm -rf %{buildroot}
