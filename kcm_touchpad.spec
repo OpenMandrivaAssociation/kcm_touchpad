@@ -12,7 +12,7 @@ Patch0:         synaptic-1.1.3.patch
 # (bor) fix setting of boolean properties on startup
 # Patch100:	fix_boolean_properties_on_startup.patch
 # (bor) fix saving/restoring of CoastingSpeed state
-Patch101:	fix_scroll_coasting.patch
+# Patch101:	fix_scroll_coasting.patch
 
 BuildRoot:      %_tmppath/%name-%version-buildroot
 BuildRequires:  kdelibs4-devel
