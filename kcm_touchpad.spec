@@ -10,7 +10,7 @@ Source0:        mishaaq-%name-%gitref.tar.gz
 Patch0:         synaptic-1.1.3.patch
 
 # (bor) fix setting of boolean properties on startup
-Patch100:	fix_boolean_properties_on_startup.patch
+# Patch100:	fix_boolean_properties_on_startup.patch
 # (bor) fix saving/restoring of CoastingSpeed state
 Patch101:	fix_scroll_coasting.patch
 
