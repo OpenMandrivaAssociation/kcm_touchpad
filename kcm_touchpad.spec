@@ -5,7 +5,7 @@ Summary:        Touchpad Configuration GUI for KDE
 Release:        %mkrel 2
 License:        GPL
 Group:          Graphical desktop/KDE
-URL:            http://github.com/mishaaq/kcm_touchpad
+URL:            http://kde-apps.org/content/show.php/kcm_touchpad?content=113335
 Source0:        mishaaq-%name-%gitref.tar.gz
 #Patch0:         synaptic-1.1.3.patch
 
