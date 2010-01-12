@@ -16,7 +16,7 @@ Source0:        http://download.github.com/mishaaq-%name-%gitref.tar.gz
 # (bor) fix saving/restoring of CoastingSpeed state
 # Patch101:	fix_scroll_coasting.patch
 # (bor) fix saving/restoring of CoastingSpeed state again
-Patch102:	0001-Fix-settings-of-coasting-speed-on-startup.patch
+# Patch102:	0001-Fix-settings-of-coasting-speed-on-startup.patch
 
 BuildRoot:      %_tmppath/%name-%version-buildroot
 BuildRequires:  kdelibs4-devel
