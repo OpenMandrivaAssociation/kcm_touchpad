@@ -1,12 +1,12 @@
-%define gitref     000be4c
+%define gitref     00370b5
 Name:           kcm_touchpad
-Version:        0.3.0
+Version:        0.3.1
 Summary:        Touchpad Configuration GUI for KDE
-Release:        %mkrel 3
+Release:        %mkrel 1
 License:        GPL
 Group:          Graphical desktop/KDE
 URL:            http://kde-apps.org/content/show.php/kcm_touchpad?content=113335
-Source0:        mishaaq-%name-%gitref.tar.gz
+Source0:        http://download.github.com/mishaaq-%name-%gitref.tar.gz
 #Patch0:         synaptic-1.1.3.patch
 
 # Upstream patches
