@@ -2,7 +2,7 @@
 Name:           kcm_touchpad
 Version:        0.3.1
 Summary:        Touchpad Configuration GUI for KDE
-Release:        %mkrel 1
+Release:        %mkrel 2
 License:        GPL
 Group:          Graphical desktop/KDE
 URL:            http://kde-apps.org/content/show.php/kcm_touchpad?content=113335
@@ -17,6 +17,8 @@ Source0:        http://download.github.com/mishaaq-%name-%gitref.tar.gz
 # Patch101:	fix_scroll_coasting.patch
 # (bor) fix saving/restoring of CoastingSpeed state again
 # Patch102:	0001-Fix-settings-of-coasting-speed-on-startup.patch
+# (bor) fix setting scrolling sensitivity to High disables scrolling
+Patch103:	kcm_touchpad-0.3.1-scroll_high.patch
 
 BuildRoot:      %_tmppath/%name-%version-buildroot
 BuildRequires:  kdelibs4-devel
