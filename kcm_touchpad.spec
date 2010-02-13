@@ -39,7 +39,10 @@ Touchpad Configuration GUI for KDE
 %defattr(-,root,root)
 %doc AUTHORS README
 %{_kde_libdir}/kde4/kcm_touchpad.so
-%{_kde_datadir}/kde4/services/touchpad.desktop
+%{_kde_libdir}/kde4/libexec/ksyndaemon
+%{_kde_services}/touchpad.desktop
+%{_kde_services}/ksyndaemon.desktop
+%{_datadir}/dbus-1/services/org.kde.ksyndaemon.service
 
 #-----------------------------------------------------------------------------
 
