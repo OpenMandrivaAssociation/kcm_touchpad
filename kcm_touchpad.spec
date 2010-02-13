@@ -18,9 +18,10 @@ Source0:        http://download.github.com/mishaaq-%name-%gitref.tar.gz
 # (bor) fix saving/restoring of CoastingSpeed state again
 # Patch102:	0001-Fix-settings-of-coasting-speed-on-startup.patch
 # (bor) fix setting scrolling sensitivity to High disables scrolling
-Patch103:	kcm_touchpad-0.3.1-scroll_high.patch
+Patch103:	0001-fix-the-scrolling-being-disabled-after-setting-the-s.patch
 # (bor) better checking of supported touchpad capabilities
-Patch104:	kcm_touchpad-0.3.1-capabilites.patch
+Patch104:	0002-Add-support-for-querying-touchpad-capabilities.patch
+Patch105:	0003-Do-not-offer-for-configuration-actions-that-touchpad.patch
 
 BuildRoot:      %_tmppath/%name-%version-buildroot
 BuildRequires:  kdelibs4-devel
