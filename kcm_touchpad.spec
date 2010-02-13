@@ -2,7 +2,7 @@
 Name:           kcm_touchpad
 Version:        0.3.1
 Summary:        Touchpad Configuration GUI for KDE
-Release:        %mkrel 3
+Release:        %mkrel 4
 License:        GPL
 Group:          Graphical desktop/KDE
 URL:            http://kde-apps.org/content/show.php/kcm_touchpad?content=113335
@@ -22,6 +22,9 @@ Patch103:	0001-fix-the-scrolling-being-disabled-after-setting-the-s.patch
 # (bor) better checking of supported touchpad capabilities
 Patch104:	0002-Add-support-for-querying-touchpad-capabilities.patch
 Patch105:	0003-Do-not-offer-for-configuration-actions-that-touchpad.patch
+# (bor) implement SmartMode
+Patch106:	0004-Add-ksyndaemon-daemon-to-monitor-touchpad.patch
+Patch107:	0005-Implement-SmartMode-as-interface-to-ksyndaemon.patch
 
 BuildRoot:      %_tmppath/%name-%version-buildroot
 BuildRequires:  kdelibs4-devel
