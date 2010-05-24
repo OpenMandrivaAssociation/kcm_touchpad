@@ -2,7 +2,7 @@
 Name:           kcm_touchpad
 Version:        0.3.1
 Summary:        Touchpad Configuration GUI for KDE
-Release:        %mkrel 5
+Release:        %mkrel 6
 License:        GPL
 Group:          Graphical desktop/KDE
 URL:            http://kde-apps.org/content/show.php/kcm_touchpad?content=113335
@@ -27,6 +27,8 @@ Patch106:	0004-Add-ksyndaemon-daemon-to-monitor-touchpad.patch
 Patch107:	0005-Implement-SmartMode-as-interface-to-ksyndaemon.patch
 # (bor) fix previous patch
 Patch108:	0006-ksyndaemon-was-not-terminated-on-session-logout.patch
+# (bor) add translations from Mandriva SVN
+Patch109:	0007-Add-l10n-files-from-Mandriva-cooker.patch
 
 BuildRoot:      %_tmppath/%name-%version-buildroot
 BuildRequires:  kdelibs4-devel
