@@ -1,12 +1,13 @@
 %define gitref     00370b5
-Name:           kcm_touchpad
-Version:        0.3.1
-Summary:        Touchpad Configuration GUI for KDE
-Release:        %mkrel 8
-License:        GPL
-Group:          Graphical desktop/KDE
-URL:            http://kde-apps.org/content/show.php/kcm_touchpad?content=113335
-Source0:        http://download.github.com/mishaaq-%name-%gitref.tar.gz
+
+Name:		kcm_touchpad
+Version:	0.3.1
+Summary:	Touchpad Configuration GUI for KDE
+Release:	10
+License:	GPL
+Group:		Graphical desktop/KDE
+URL:		http://kde-apps.org/content/show.php/kcm_touchpad?content=113335
+Source0:	http://download.github.com/mishaaq-%name-%gitref.tar.gz
 #Patch0:         synaptic-1.1.3.patch
 
 # Upstream patches
@@ -32,17 +33,16 @@ Patch109:	0007-Add-l10n-files-from-Mandriva-cooker.patch
 # (bor) fix system settings category for KDE 4.6
 Patch110:	0008-Fix-System-Settings-category-for-4.6.patch
 
-BuildRoot:      %_tmppath/%name-%version-buildroot
-BuildRequires:  kdelibs4-devel
-BuildRequires:  x11-driver-input-synaptics-devel
+BuildRequires:	kdelibs4-devel
+BuildRequires:	x11-driver-input-synaptics-devel
+BuildRequires:	pkgconfig(xi)
 
-Requires:       kdebase4-runtime
+Requires:	kdebase4-runtime
 
 %description
-Touchpad Configuration GUI for KDE
+Touchpad Configuration GUI for KDE.
 
-%files -f %name.lang
-%defattr(-,root,root)
+%files -f %{name}.lang
 %doc AUTHORS README
 %{_kde_libdir}/kde4/kcm_touchpad.so
 %{_kde_libdir}/kde4/libexec/ksyndaemon
@@ -53,24 +53,93 @@ Touchpad Configuration GUI for KDE
 #-----------------------------------------------------------------------------
 
 %prep
-%setup -q -n mishaaq-%name-%gitref
+%setup -q -n mishaaq-%{name}-%{gitref}
 %apply_patches
 
 %build
-
 %cmake_kde4
 
 %make
 
-
 %install
-rm -rf %buildroot
 %makeinstall_std -C build
 
 rm -f %{buildroot}%{_docdir}/%{name}/*
 
-%find_lang %name
+%find_lang %{name}
 
-%clean
-rm -rf %{buildroot}
+%changelog
+* Wed May 04 2011 Oden Eriksson <oeriksson@mandriva.com> 0.3.1-8mdv2011.0
++ Revision: 666006
+- mass rebuild
+
+* Thu Sep 09 2010 Andrey Borzenkov <arvidjaar@mandriva.org> 0.3.1-7mdv2011.0
++ Revision: 576997
+- patch110: fix system settings category for KDE 4.6
+
+* Mon May 24 2010 Andrey Borzenkov <arvidjaar@mandriva.org> 0.3.1-6mdv2010.1
++ Revision: 545818
+- patch109: add translations from Mandriva SVN
+
+* Tue Mar 09 2010 Andrey Borzenkov <arvidjaar@mandriva.org> 0.3.1-5mdv2010.1
++ Revision: 517167
+- patch108: fix ksyndaemon not terminated on logout
+
+* Sat Feb 13 2010 Andrey Borzenkov <arvidjaar@mandriva.org> 0.3.1-4mdv2010.1
++ Revision: 505581
+- patch106, patch107: implement SmartMode based on syndaemon
+
+* Sat Jan 23 2010 Andrey Borzenkov <arvidjaar@mandriva.org> 0.3.1-3mdv2010.1
++ Revision: 495185
+- patch104: better checking of touchpad capabilities
+
+* Wed Jan 20 2010 Andrey Borzenkov <arvidjaar@mandriva.org> 0.3.1-2mdv2010.1
++ Revision: 494089
+- patch103: do not disable scrolling when sensitivity set to High
+
+* Tue Jan 12 2010 Andrey Borzenkov <arvidjaar@mandriva.org> 0.3.1-1mdv2010.1
++ Revision: 490355
+- remove patch102 - integrated upstream
+- new version
+
+* Thu Nov 12 2009 Andrey Borzenkov <arvidjaar@mandriva.org> 0.3.0-3mdv2010.1
++ Revision: 465391
+- fix setting of coasting speed on startup (again)
+
+* Thu Nov 12 2009 Andrey Borzenkov <arvidjaar@mandriva.org> 0.3.0-2mdv2010.1
++ Revision: 465132
+- rebuild with new Qt
+
+* Sat Nov 07 2009 Andrey Borzenkov <arvidjaar@mandriva.org> 0.3.0-1mdv2010.1
++ Revision: 462365
+- update snapshot to official release
+- use "official" home page for URL
+
+* Sun Oct 25 2009 Andrey Borzenkov <arvidjaar@mandriva.org> 0.2.95-2mdv2010.0
++ Revision: 459235
+- new GIT snapshot - fix CoastingSpeed restore on KDE startup
+- new GIT snapshot - fix buttons sometimes disabed on startup
+
+* Fri Oct 23 2009 Andrey Borzenkov <arvidjaar@mandriva.org> 0.2.95-0.1mdv2010.0
++ Revision: 459056
+- properly package translation files
+- disable patch0 - seems to build fine without it
+- remove patch101 - modified version upstream
+- remove patch100 - integrated upstream
+- new GIT snapshot - post 0.2.95
+
+* Sat Oct 17 2009 Andrey Borzenkov <arvidjaar@mandriva.org> 0.2-0.3mdv2010.0
++ Revision: 458037
+- patch101: fix saving/restoring of CoastingSpeed
+- patch100: fix setting of boolean properties on startup. Most notably it broke tapping
+
+  + Colin Guthrie <cguthrie@mandriva.org>
+    - New upstream snapshot
+
+* Fri Oct 16 2009 Nicolas Lécureuil <nlecureuil@mandriva.com> 0.2-0.1mdv2010.0
++ Revision: 457821
+- Fix minimum requires
+
+  + Colin Guthrie <cguthrie@mandriva.org>
+    - import kcm_touchpad
 
