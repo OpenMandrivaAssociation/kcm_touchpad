@@ -4397,7 +4397,7 @@ new file mode 100644
 index 0000000..977dff3
 --- /dev/null
 +++ b/po/ru/kcm_touchpad.po
-@@ -0,0 +1,351 @@
+@@ -0,0 +1,350 @@
 +# SOME DESCRIPTIVE TITLE.
 +# This file is put in the public domain.
 +# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
@@ -4725,9 +4725,8 @@ index 0000000..977dff3
 +msgstr "Тремя пальцами"
 +
 +#: rc.cpp:267
-+#, fuzzy
 +msgid "means"
-+msgstr "метод"
++msgstr "соответствует"
 +
 +#: rc.cpp:270
 +msgid "None"

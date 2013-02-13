@@ -3,7 +3,7 @@
 Name:		kcm_touchpad
 Version:	0.3.1
 Summary:	Touchpad Configuration GUI for KDE
-Release:	10
+Release:	11
 License:	GPL
 Group:		Graphical desktop/KDE
 URL:		http://kde-apps.org/content/show.php/kcm_touchpad?content=113335
@@ -32,6 +32,7 @@ Patch108:	0006-ksyndaemon-was-not-terminated-on-session-logout.patch
 Patch109:	0007-Add-l10n-files-from-Mandriva-cooker.patch
 # (bor) fix system settings category for KDE 4.6
 Patch110:	0008-Fix-System-Settings-category-for-4.6.patch
+Patch111:       touchpad.desktop-localization.patch
 
 BuildRequires:	kdelibs4-devel
 BuildRequires:	x11-driver-input-synaptics-devel

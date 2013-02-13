@@ -1,0 +1,12 @@
+--- a/touchpad.desktop.orig	2013-02-13 12:26:22.803656884 +0400
++++ b/touchpad.desktop	2013-02-13 12:27:04.196036946 +0400
+@@ -14,7 +14,9 @@
+ X-KDE-Weight=50
+ 
+ Name=Touchpad
++Name[ru]=Тачпад
+ 
+ Comment=Touchpad settings
++Comment[ru]=Настройки тачпада
+ 
+ X-KDE-Keywords=Touchpad,Synaptics
