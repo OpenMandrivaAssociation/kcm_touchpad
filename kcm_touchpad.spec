@@ -3,7 +3,7 @@
 Summary:	Touchpad Configuration GUI for KDE
 Name:		kcm_touchpad
 Version:	0.3.1
-Release:	15
+Release:	16
 License:	GPLv2
 Group:		Graphical desktop/KDE
 Url:		http://kde-apps.org/content/show.php/kcm_touchpad?content=113335
