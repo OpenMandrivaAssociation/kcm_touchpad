@@ -54,7 +54,7 @@ Touchpad Configuration GUI for KDE.
 
 %prep
 %setup -qn mishaaq-%{name}-%{gitref}
-%apply_patches
+%autopatch -p1
 
 %build
 %cmake_kde4
