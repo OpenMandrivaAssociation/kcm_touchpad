@@ -6,7 +6,7 @@ Version:	0.3.1
 Release:	21
 License:	GPLv2
 Group:		Graphical desktop/KDE
-Url:		http://kde-apps.org/content/show.php/kcm_touchpad?content=113335
+Url:		https://kde-apps.org/content/show.php/kcm_touchpad?content=113335
 Source0:	http://download.github.com/mishaaq-%{name}-%{gitref}f.tar.gz
 #Patch0:         synaptic-1.1.3.patch
 
